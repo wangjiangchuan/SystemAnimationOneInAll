@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--WallPaper First Activity Theme-->
+    <style name="WpFirstActivity" parent="AppTheme">
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowAnimationStyle">@style/WpFirstAnimation</item>
+    </style>
+    <style name="WpFirstAnimation" parent="android:Animation">
+        <item name="android:wallpaperCloseEnterAnimation">@anim/wallpaper_close_enter_animation</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/wallpaper_close_exit_animation</item>
+    </style>
+
+    <!--WallPaper Second Activity Theme-->
+    <style name="WpSecondActivity" parent="android:Theme.Wallpaper">
+        <item name="android:windowAnimationStyle">@style/WpSecondAnimation</item>
+    </style>
+    <style name="WpSecondAnimation" parent="android:Animation">
+        <item name="android:wallpaperOpenEnterAnimation">@anim/wallpaper_open_enter_animation</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/wallpaper_open_exit_animation</item>
+
+        <item name="android:wallpaperIntraCloseEnterAnimation">@anim/wallpaper_intra_open_enter_animation</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@anim/wallpaper_intra_open_exit_animation</item>
+    </style>
+
+    <!--WallPaper Third Activity Theme-->
+    <style name="WpThirdActivity" parent="android:Theme.Wallpaper">
+        <item name="android:windowAnimationStyle">@style/WpThirdAnimation</item>
+    </style>
+    <style name="WpThirdAnimation" parent="android:Animation">
+        <item name="android:wallpaperIntraOpenEnterAnimation">@anim/wallpaper_intra_open_enter_animation</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@anim/wallpaper_intra_open_exit_animation</item>
+    </style>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.animationoneinalldemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Menu Activity -->
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- WallPaper Animation Demo -->
+        <!-- WallPaper First Activity -->
+        <activity
+            android:name=".wallpaperAnimation.WpFirstActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/WpFirstActivity" />
+
+        <!-- WallPaper Second Activity -->
+        <activity
+            android:name=".wallpaperAnimation.WpSecondActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/WpSecondActivity" />
+
+        <!-- Third Activity -->
+        <activity
+            android:name=".wallpaperAnimation.WpThirdActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/WpThirdActivity"></activity>
+        <activity android:name=".taskAnimation.taskFirstActivity"></activity>
+    </application>
+
+</manifest>

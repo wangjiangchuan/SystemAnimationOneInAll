@@ -32,5 +32,35 @@
             android:text="Task Animation"
             android:textAllCaps="false"
             android:id="@+id/menu_task_anim_but"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize"
+            android:padding="@dimen/paddingdistance"
+            android:layout_marginTop="@dimen/paddingdistance"
+            android:text="Activity Animation"
+            android:textAllCaps="false"
+            android:id="@+id/menu_act_anim_but"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize"
+            android:padding="@dimen/paddingdistance"
+            android:layout_marginTop="@dimen/paddingdistance"
+            android:text="Window Animation"
+            android:textAllCaps="false"
+            android:id="@+id/menu_wind_anim_but"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize"
+            android:padding="@dimen/paddingdistance"
+            android:layout_marginTop="@dimen/paddingdistance"
+            android:text="Fragment Animation"
+            android:textAllCaps="false"
+            android:id="@+id/menu_fragment_anim_but"/>
     </LinearLayout>
 </RelativeLayout>

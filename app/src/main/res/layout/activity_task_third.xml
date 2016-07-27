@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.root.animationoneinalldemo.taskAnimation.taskFirstActivity">
-    
+    tools:context="com.example.root.animationoneinalldemo.taskAnimation.taskThirdActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,29 +20,31 @@
             android:padding="@dimen/paddingdistance"
             android:textSize="@dimen/textsize"
             android:text="当前Task ID:"
-            android:id="@+id/task_first_taskid"/>
+            android:id="@+id/task_third_taskid"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/paddingdistance"
             android:textSize="@dimen/textsize"
-            android:text="Task Animation \n OpenEnter OpenExit"
+            android:text="Task Animation \n ToFrontEnter ToFrontExit"
             android:lines="2"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/textsize"
             android:padding="@dimen/paddingdistance"
-            android:text="Jump Activity Second"
-            android:id="@+id/task_first_second_act_but"/>
+            android:text="Bring Task To Front"
+            android:id="@+id/task_third_taskfront_but"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/paddingdistance"
             android:textSize="@dimen/textsize"
-            android:text="Task ToFront ToBack Animation" />
+            android:text="Task Animation \n ToBackEnter ToBackExit"
+            android:lines="2"/>
 
         <Button
             android:layout_marginTop="@dimen/paddingdistance"
@@ -50,17 +52,8 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/textsize"
             android:padding="@dimen/paddingdistance"
-            android:text="Jump Activity Second"
-            android:id="@+id/task_first_third_act_but"/>
-
-        <Button
-            android:layout_marginTop="@dimen/paddingdistance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/textsize"
-            android:padding="@dimen/paddingdistance"
-            android:text="Return Meun"
-            android:id="@+id/task_return_menu_but"/>
+            android:text="Bring Task To Back"
+            android:id="@+id/task_third_taskback_but"/>
     </LinearLayout>
 
 </RelativeLayout>

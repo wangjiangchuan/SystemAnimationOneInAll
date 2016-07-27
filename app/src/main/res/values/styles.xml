@@ -8,6 +8,87 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Fragment Animation-->
+    <style name="fragmentFirstActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/fragmentFirstAnimation</item>
+    </style>
+    <style name="fragmentFirstAnimation" parent="android:Animation">
+        <item name="android:fragmentOpenEnterAnimation">@anim/fragment_open_enter_animation</item>
+        <item name="android:fragmentOpenExitAnimation">@anim/fragment_open_exit_animation</item>
+
+        <item name="android:fragmentCloseEnterAnimation">@anim/fragment_close_enter_animation</item>
+        <item name="android:fragmentCloseExitAnimation">@anim/fragment_close_exit_animation</item>
+    </style>
+
+    <!--Window Animation-->
+    <!--window First Activity-->
+    <style name="windowFirstActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/windowFirstAnimation</item>
+    </style>
+    <style name="windowFirstAnimation" parent="android:Animation">
+        <item name="android:windowShowAnimation">@anim/window_show_animation</item>
+        <item name="android:windowHideAnimation">@anim/window_hide_animation</item>
+
+    </style>
+    <!--Dialog Animation-->
+    <style name="dialogAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!--Activity Animation Themes-->
+    <!--Act First Activity-->
+    <style name="actFirstActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/actFirstAnimation</item>
+    </style>
+    <style name="actFirstAnimation" parent="android:Animation">
+        <item name="android:activityCloseEnterAnimation">@anim/act_close_enter_animation</item>
+        <item name="android:activityCloseExitAnimation">@anim/act_close_exit_animation</item>
+    </style>
+
+    <!--Act Second Activity-->
+    <style name="actSecondActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/actSecondAnimation</item>
+    </style>
+    <style name="actSecondAnimation" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/act_open_enter_animation</item>
+        <item name="android:activityOpenExitAnimation">@anim/act_open_exit_animation</item>
+
+    </style>
+    
+    <!--Task Animation Themes-->
+    <!--Task First Activity-->
+    <style name="taskFirstActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/taskFirstAnimation</item>
+    </style>
+    <style name="taskFirstAnimation" parent="android:Animation">
+        <item name="android:taskCloseEnterAnimation">@anim/task_close_enter_animation</item>
+        <item name="android:taskCloseExitAnimation">@anim/task_close_exit_animation</item>
+
+        <item name="android:taskToFrontEnterAnimation">@anim/task_tofront_enter_animation</item>
+        <item name="android:taskToFrontExitAnimation">@anim/task_tofront_exit_animation</item>
+
+        <item name="android:taskToBackEnterAnimation">@anim/task_toback_enter_animation</item>
+        <item name="android:taskToBackExitAnimation">@anim/task_toback_exit_animation</item>
+    </style>
+
+    <!--Task Second Animation-->
+    <style name="taskSecondActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/taskSecondAnimation</item>
+    </style>
+    <style name="taskSecondAnimation" parent="android:Animation">
+        <item name="android:taskOpenEnterAnimation">@anim/task_open_enter_animation</item>
+        <item name="android:taskOpenExitAnimation">@anim/task_open_exit_animation</item>
+    </style>
+
+    <!--Task Third Animation-->
+    <style name="taskThirdActivity" parent="AppTheme">
+        <!--<item name="android:windowAnimationStyle">@style/taskThirdAnimation</item>-->
+    </style>
+    <style name="taskThirdAnimation" parent="android:Animation">
+        <item name="android:taskToBackEnterAnimation">@anim/task_toback_enter_animation</item>
+        <item name="android:taskToBackExitAnimation">@anim/task_toback_exit_animation</item>
+    </style>
 
     <!--WallPaper First Activity Theme-->
     <style name="WpFirstActivity" parent="AppTheme">

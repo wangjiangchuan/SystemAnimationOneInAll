@@ -6,11 +6,12 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
 
         <!-- Menu Activity -->
-        <activity android:name=".MenuActivity">
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,12 +32,53 @@
             android:launchMode="singleTask"
             android:theme="@style/WpSecondActivity" />
 
-        <!-- Third Activity -->
+        <!-- WallPaper Third Activity -->
         <activity
             android:name=".wallpaperAnimation.WpThirdActivity"
             android:launchMode="singleTask"
-            android:theme="@style/WpThirdActivity"></activity>
-        <activity android:name=".taskAnimation.taskFirstActivity"></activity>
+            android:theme="@style/WpThirdActivity" />
+
+        <!-- Task Animation -->
+        <!-- taskFirstActivity -->
+        <activity
+            android:name=".taskAnimation.taskFirstActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/taskFirstActivity" />
+
+        <!-- taskSecondActivity -->
+        <activity
+            android:name=".taskAnimation.taskSecondActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/taskSecondActivity" />
+
+        <!-- taskThirdActivity -->
+        <activity
+            android:name=".taskAnimation.taskThirdActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/taskThirdActivity" />
+
+        <!-- Activity Animation -->
+        <!-- actFirstActivity -->
+        <activity
+            android:name=".activityAnimation.actFirstActivity"
+            android:theme="@style/actFirstActivity" />
+        <!-- actSecondActivity -->
+        <activity
+            android:name=".activityAnimation.actSecondActivity"
+            android:theme="@style/actSecondActivity" />
+
+        <!-- Window Animation -->
+        <!-- windowFirstActivity -->
+        <activity
+            android:name=".windowAnimation.windowFirstActivity"
+            android:theme="@style/windowFirstActivity">
+        </activity>
+
+        <!--Fragment Animation-->
+        <activity
+            android:name=".fragmentAnimation.fragmentFirstActivity"
+            android:theme="@style/fragmentFirstActivity">
+        </activity>
     </application>
 
 </manifest>
